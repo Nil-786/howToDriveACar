@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Styles\styles.css">
+</head>
+<body>
+        <nav class="navbar">
+            <div class="nav-logo">
+                <img src="\Public\Images\2-removebg-preview.png" alt="">
+            </div>
+            <div class="dropdown">
+                <ul class="drop-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <!-- <li><button class="dropdown-login">Login | signUp</button></li> -->
+                </ul>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <!-- <button class="login">Login | signUp</button> -->
+            <div class="quick-links">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+
+            <div class="burger" id="burger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+        <section class="log-in">
+            <div class="log" id="login">
+                <form action="">
+                    <Label>Username:</Label><input type="text" placeholder="Enter your username:">
+                    <Label>password:</Label><input type="password" placeholder="password">
+                    <button>Login</button>
+                    <p id="log-sm">Haven't signed Up?.. <a href="">Sign Up</a></p>
+                </form>
+            </div>
+            <div class="log" id="signup">
+                <form action="">
+                    <Label>Email:</Label><input type="email" placeholder="Enter your email:">
+                    <Label>Username:</Label><input type="password" placeholder="Enter your username">
+                    <label>password</label><input type="password" placeholder="password">
+                    <label>Confirm password</label><input type="password" placeholder="password">
+                    <button>signUp</button>
+                    <p id="sign-sm">Already registered ?.. <a href="">Login</a></p>
+                </form>
+            </div>
+            <div class="bar">
+                <p id="text">Create an account.</p>
+                <button id="toggle" >Sign up</button>
+            </div>
+        </section>
+        <script src="Js\index.js"></script>
+</body>
+</html>

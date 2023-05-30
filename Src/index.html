@@ -13,7 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="Styles\styles.css">
-    <script src="Js\index.js"></script>
 </head>
 
 <body>
@@ -24,18 +23,18 @@
             </div>
             <div class="dropdown">
                 <ul class="drop-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><button class="dropdown-login">Login | signUp</button></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><button class="dropdown-login"><a href="login.html">Login | signUp</a></button></li>
                 </ul>
             </div>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
-            <button class="login">Login | signUp</button>
+            <button class="login"><a href="login.html">Login | signUp</a></button>
             <div class="quick-links">
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-instagram"></i>
@@ -148,6 +147,14 @@
             </div>
         </div>
     </section>
+    <div class="next-prev">
+        <div >
+            <!-- <a href="index.html"><i class="fa-solid fa-angles-left"></i> Home </a>  -->
+        </div>
+        <div>
+            <a href="tut1.html">Start <i class="fa-solid fa-angles-right"></i></a>
+        </div>
+    </div>
 
     <section class="footer">
         <div class="footer-container">
@@ -164,34 +171,16 @@
             <div class="footer-item ">
                 <h1>Useful Links</h1>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact Us</a></li>
-                    <li><a href="">Login</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="login.html">Login</a></li>
                 </ul>
             </div>
 
         </div>
     </section>
-
-    <script>
-        
-        var burger = document.querySelector("#burger");
-        var dropdown = document.querySelector(".dropdown");
-        var intro = document.querySelector(".intro");
-        burger.onclick = function () {
-            if (dropdown.style.display === "none") {
-                dropdown.style.display = "block";
-                intro.style.marginTop = "200px";
-                burger.innerHTML = '<i class="fa-solid fa-x"></i>';
-            } else {
-                dropdown.style.display = "none";
-                intro.style.marginTop = "80px";
-                burger.innerHTML = '<i class="fa-solid fa-bars"></i>'
-            }
-        }
-
-    </script>
+    <script src="Js\index.js"></script>
 </body>
 
 </html>
